@@ -1,0 +1,19 @@
+runtime: go
+api_version: go1
+
+handlers:
+
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+
+- url: /atics.js
+  static_files: aticsfallback.0.1.js
+  upload: aticsfallback.0.1.js
+
+- url: /.*
+  script: _go_app
