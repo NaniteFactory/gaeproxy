@@ -1,5 +1,4 @@
-runtime: go
-api_version: go1
+runtime: go113
 
 handlers:
 
@@ -16,4 +15,4 @@ handlers:
   upload: aticsfallback.0.1.js
 
 - url: /.*
-  script: _go_app
+  script: auto
